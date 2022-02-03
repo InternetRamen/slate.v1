@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #56ccf2; /* fallback for old browsers */
+  background-image: linear-gradient(to bottom right, #56ccf2, #2f80ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height:100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  overflow: hidden;
+}
+.main {
+  padding-top: 20px;
+  margin: auto;
+}
+
+.title {
+  margin: auto;
+}
+
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  margin: 0px;
+  font-size: 17px;
+}
+
+.box {
+  margin: 10px auto;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  transition: background-color 0.4s, color 0.4s;
+
+}
+
+.box:hover {
+  border-color: #f6fdfd;
+  background: #f6fdfd;
+  color: #2F80ED;
+}
+
+/*ipad and above*/
+@media (min-width: 768px) {
+  .pfp {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+  }
+  .list {
+    margin: 5px 10%;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .main {
+    padding-bottom: 10px;
+  }
+  .box {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px auto;
+  }
+}
+/*iphone*/
+@media (max-width: 767px) {
+  .pfp {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+  }
+  .list {
+    margin: 5px 5%;
+  }
+  .main {
+    padding-bottom: 5px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .box {
+    width: 95%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 5px auto;
+  }
+
+}
